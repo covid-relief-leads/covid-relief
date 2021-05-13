@@ -12,7 +12,14 @@
     margin: 0 20px;
 }
 
-p{
-    font-size: 25px;
-    text-align: center;
+@media only screen and (min-width: 270px) and (max-width: 700px){
+    .main_content{
+        flex-direction: column;
+        height: 125%;
+        margin: 0;
+    }
+
+    .card{
+        margin: 20px 0;
+    }
 }

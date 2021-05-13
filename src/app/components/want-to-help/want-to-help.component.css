@@ -11,3 +11,15 @@
     height: 400px;
     margin: 0 20px;
 }
+
+@media only screen and (min-width: 270px) and (max-width: 700px){
+    .want_to_help_card{
+        flex-direction: column;
+        height: 180%;
+        margin: 0;
+    }
+
+    .card{
+        margin: 20px 0;
+    }
+}

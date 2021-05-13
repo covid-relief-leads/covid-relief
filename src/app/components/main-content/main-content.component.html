@@ -1,12 +1,11 @@
 <div class="main_content">
     <div class="want_to_help_card">
-        <mat-card class="card">
+        <mat-card [routerLink]="'/want-to-help'" class="card">
             <img class="image" mat-card-image src="{{wantToHelp.image}}"/>
             <mat-card-title>{{wantToHelp.title}}</mat-card-title>
             <mat-card-subtitle>{{wantToHelp.subtitle}}</mat-card-subtitle>
         </mat-card> 
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, optio dolore. Veritatis quisquam mollitia delectus eligendi. Aspernatur id eaque tenetur eos temporibus vitae nam dolore porro expedita, nemo enim laudantium.</p>
     <div class="need_help_card">
         <mat-card class="card">
             <img class="need_help_image" mat-card-image src="{{needHelp.image}}"/>
