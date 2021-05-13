@@ -1,0 +1,12 @@
+.title_bar{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.heading{
+    font-size: 30px;
+    font-family: 'Merriweather', serif;
+}

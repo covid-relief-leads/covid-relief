@@ -1,0 +1,18 @@
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 98px);
+    margin: 0 200px;
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    margin: 0 20px;
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+}
