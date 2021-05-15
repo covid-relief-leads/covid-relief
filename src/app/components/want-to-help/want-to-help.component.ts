@@ -158,9 +158,10 @@ export class WantToHelpDialogComponent {
       this.number.status == 'INVALID' ||
       this.contactType.status == 'INVALID' ||
       this.area.status == 'INVALID' ||
-      this.serviceType.status == 'INVALID'
+      this.serviceType.status == 'INVALID' ||
+      this.lastVerified.status == 'INVALID'
     ){
-      this._snackBar.open("Please fill the entire form!", "", {
+      this._snackBar.open("Please fill the form properly!", "", {
         duration: 2000,
         panelClass: ['mat-toolbar', 'mat-primary']
       });
