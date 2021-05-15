@@ -3,14 +3,22 @@
         <mat-card [routerLink]="'/want-to-help'" class="card">
             <img class="image" mat-card-image src="{{wantToHelp.image}}"/>
             <mat-card-title>{{wantToHelp.title}}</mat-card-title>
-            <mat-card-subtitle>{{wantToHelp.subtitle}}</mat-card-subtitle>
+            <mat-card-subtitle>
+                HELP US SAVING A LIFE. IF YOU HAVE VERIFIED LEADS FOR ANYTHING A COVID PATIENT MIGHT NEED, PLEASE LET THE NEEDY KNOW.<br><br>
+                "NEXT TO CREATING A LIFE, THE FINEST THING A MAN CAN DO IS SAVE ONE."<br>
+                -ABRAHAM LINCOLN
+            </mat-card-subtitle>
         </mat-card> 
     </div>
     <div class="need_help_card">
-        <mat-card class="card">
+        <mat-card [routerLink]="'/need-help'" class="card">
             <img class="need_help_image" mat-card-image src="{{needHelp.image}}"/>
             <mat-card-title>{{needHelp.title}}</mat-card-title>
-            <mat-card-subtitle>{{needHelp.subtitle}}</mat-card-subtitle>
+            <mat-card-subtitle>
+                IF YOU ARE GENUINELY LOOKING FOR SOME VERIFIED LEADS AND HAVE TROUBLES FINDING THEM, PLEASE DON'T BOTHER TO GET HELP.<br><br>
+                "AT SOMETIME IN EVERYONE'S LIFE, WE ALL START NEEDING A LITTLE HELP."<br>
+                -JIM ROBBINS    
+            </mat-card-subtitle>
         </mat-card> 
     </div>
 </div>

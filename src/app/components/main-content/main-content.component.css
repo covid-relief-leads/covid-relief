@@ -3,13 +3,20 @@
     justify-content: center;
     align-items: center;
     height: calc(100% - 98px);
-    margin: 0 200px;
 }
 
 .card{
     width: 300px;
     height: 400px;
     margin: 0 20px;
+}
+
+mat-card-title{
+    text-align: center;
+}
+
+mat-card-subtitle{
+    text-align: center;
 }
 
 @media only screen and (min-width: 270px) and (max-width: 700px){
