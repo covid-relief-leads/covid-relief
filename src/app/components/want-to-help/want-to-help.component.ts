@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, EventEmitter } from '@angular/core';
+import { Component, OnInit, Inject, EventEmitter, Input } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import {MatSnackBar} from '@angular/material/snack-bar';
@@ -92,6 +92,8 @@ export class WantToHelpComponent implements OnInit {
 })
 export class WantToHelpDialogComponent {
 
+  @Input() max;
+  today = new Date();
   onGettingData = new EventEmitter();
 
   number = new FormControl('', [Validators.required, Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")]);

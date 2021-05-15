@@ -34,7 +34,7 @@
     </mat-form-field>
     <mat-form-field appearance="outline">
         <mat-label>Last Verified</mat-label>
-        <input [matDatepicker]="picker" type="text" matInput placeholder="Lead's last verified on" [formControl]="lastVerified">
+        <input type="date" [matDatepicker]="picker" type="text" matInput placeholder="Lead's last verified on" [formControl]="lastVerified" [max]="today">
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
         <mat-error *ngIf="lastVerified.invalid">{{getLastVerifiedError()}}</mat-error>
